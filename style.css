@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --blue: rgb(0, 41, 255);
+  --dark: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins" , sans-serif;
+}
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center{
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.mx-auto {
+  margin: auto;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 44px;
+}
+nav {
+  width: 100%;
+  height: 90px;
+  background-color: #f0f0f0;
+  padding: 0 80px;
+  box-shadow: 2px 2px 10px gray;
+}
+.logo img {
+  height: 40px;
+}
+.nav-links {
+  gap: 25px;
+}
+main {
+  width: 82%;
+}
+.header {
+  margin-top: 20px;
+}
+.header h1 {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--blue);
+}
+.header button {
+  padding: 14px 30px;
+  background: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.header2 {
+  background-color: rgb(233, 236, 239);
+  border-radius: 6px;
+  margin-top: 34px;
+  padding: 24px;
+}
+.header2 p {
+  margin-top: 8px;
+}
+.cards{
+  margin-top: 75px;
+  gap: 55px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  font-family: "Open Sans";
+  display: flex;
+}
+.card {
+  height: 630px;
+  width: 530px;
+  background-color: #fdfdfd;
+  box-shadow: 2px 2px 12px gray;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.cards .title {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+}
+.title img {
+  position: absolute;
+  top: 13px;
+  right: 25px;
+}
+.description >p {
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.thread-a{
+  padding: 10px 122px;
+  background: #FEFFC033;
+  border:1px solid gainsboro
+}
+.subs{
+    gap:14px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.sub-thread{
+  height: 130px;
+  width: 242px;
+  background: #f7f7f7;
+  border:1px solid gainsboro;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 1px 1px 14px gainsboro;
+}
+.sub-thread h6{
+  padding: 8px 14px;
+  font-weight: 400;
+}
+.sub-thread input{
+  padding: 15px;
+  padding-bottom: 95px;
+  outline: none;
+  font-size: 14px;
+  border: 1px solid gainsboro;
+  border-radius: 18px;
+  height: 100%;
+  width: 100%;
+}
+.catalogs{
+  margin-top: 25px;
+  gap: 26px;
+  justify-content: center;
+}
+
+select{
+  padding: 12px 6px;
+  box-shadow: 1px 1px 10px gainsboro;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.card button{
+  padding: 14px 20px;
+  background: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 18px;
+  margin-left: 24px;
+}
+.summary{
+  height: 130px;
+  width:90%;
+  margin: 17px auto 0px;
+  background: #f7f7f7;
+  border:1px solid gainsboro;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 1px 1px 14px gainsboro;
+}
+.summary input{
+  padding: 15px;
+  padding-bottom: 95px;
+  outline: none;
+  font-size: 14px;
+  border: 1px solid gainsboro;
+  border-radius: 18px;
+  height: 100%;
+  width: 100%;
+}
+.summary h6{
+  padding: 8px 14px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.side-header{
+  color: #fff;
+  background: #000;
+  font-family: "Open Sans";
+  padding: 10px 18px;
+}
+.sidebar{
+  position: absolute;
+  top: 90px;
+  left:0;
+  background: #fff;
+  width: 327px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 0px 20px 20px ;
+  box-shadow: 1px 1px 10px gainsboro;
+  transition: all 0.5s ease;
+}
+.expand-box{
+  padding-top:20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar.collapse{
+  width: 112px;
+  transition: all 0.5s ease-in-out;
+}
+.sidebar.collapse .side-header h4{
+  display: none;
+}
+.sidebar.collapse .side-header .left-arrow{
+  display: none;
+}
+.sidebar.collapse .side-header .expand-box{
+  display: none;
+}
+.right-arrow{
+  display: none;
+}
+.sidebar.collapse .right-arrow{
+  display: block;
+}
+.sidebar.collapse  .count{
+  display: block;
+}
+.sidebar.collapse  .expand-box{
+  display: none;
+}
+.sidebar.collapse .arrow-left{
+  display: none;
+}
+.count{
+  margin: 23px auto;
+  height: 60px;
+  width: 60px;
+  border: 1px solid var(--blue);
+  border-radius: 18px;
+  display: none;
+}
+.count h1{
+  text-align: center;
+  color: var(--blue);
+  font-weight: 400;
+  font-size: 38px;
+}
+.right-arrow{
+  padding-left: 45px;
+}
+.mb-4{
+  margin-bottom: 14px;
+}
+.dot{
+  background: #000;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.bx-3{
+  width: 90%;
+  margin: auto;
+}
+.all-content{
+  box-shadow: 1px 1px 10px gainsboro;
+  padding: 22px;
+  border-radius: 10px;
+  margin-top: 18px;
+}
+.bx-2 input{
+  height:40px;
+  width: 100%;
+  border: none;
+  box-shadow: 1px 1px 10px gainsboro;
+  outline: none;
+  padding: 14px;
+  margin: 15px 0px;
+}
+.content{
+  color: #616161;
+  gap: 20px;
+  font-size: 14px;
+}
+.content-tool{
+  margin-top: 12px;
+  gap:20px;
+  color: #616161;
+}
+.content-tool p {
+  background: #EBEBEB;
+  padding: 3px 14px;
+  font-size: 14px;
+}
+.full-inp{
+  height:200px;
+  width: 100%;
+  border: none;
+  box-shadow: 1px 1px 10px gainsboro;
+  outline: none;
+  padding: 14px;
+  padding-bottom: 140px;
+}
+.bx-3 h3{
+  font-weight: 600;
+}
+.bx-4{
+  margin-top: 24px;
+  width: 90%;
+  margin: auto;
+}
+.intro{
+  background-color: rgb(242,242,242);
+  padding: 7px 44px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+.bx-4 span{
+  color: #606161;
+  text-align: right;
+  margin-top: 38px;
+  display: block;
+  font-weight: 600;
+}
+.thread-4{
+  border: 2px solid gainsboro ;
+  padding: 9px 42px;
+  margin: 22px 0px;
+  font-weight: 600; 
+}
+.example{
+  width: 80%;
+  margin-left: 70px;
+  border: 2px solid gainsboro ;
+  padding: 9px 32px;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+
+
+
